@@ -1,10 +1,11 @@
 <script setup>
-const headerMenu = ref(null)
 const storyblokApi = useStoryblokApi()
 const { data } = await storyblokApi.get('cdn/stories/config', {
   version: 'draft',
-  resolve_links: 'url', // important
+  resolve_links: 'url',
 })
+
+const headerMenu = ref(null)
 headerMenu.value = data.story.content.header_menu
 </script>
 
