@@ -3,9 +3,9 @@
     v-editable="blok"
     class="w-full p-12 bg-[#f7f6fd] rounded-[5px] text-center"
   >
-    <h1 class="text-2xl text-[#1d243d] font-bold">
+    <h3 class="text-2xl text-[#1d243d] font-bold">
       {{ blok.name }}
-    </h1>
+    </h3>
   </div>
 </template>
 
