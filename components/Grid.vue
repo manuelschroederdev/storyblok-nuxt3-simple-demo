@@ -3,10 +3,11 @@
     v-editable="blok"
     class="container mx-auto grid md:grid-cols-3 gap-16 place-items-center"
   >
-    <StoryblokComponent
+    <component
       v-for="blok in blok.columns"
       :key="blok._uid"
       :blok="blok"
+      :is="blok.component"
     />
   </div>
 </template>

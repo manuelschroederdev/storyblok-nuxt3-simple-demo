@@ -8,5 +8,5 @@ const story = await useStoryblok(slug ? 'part-4/' + slug : 'part-4/home', {
 </script>
 
 <template>
-  <StoryblokComponent v-if="story" :blok="story.content" />
+  <Page v-if="story" :blok="story.content" />
 </template>
